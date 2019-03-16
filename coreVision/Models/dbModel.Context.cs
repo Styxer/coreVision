@@ -25,6 +25,6 @@ namespace coreVision.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public DbSet<LandingPage> landingPages { get; set; }
+        public DbSet<landingPage> landingPages { get; set; }
     }
 }

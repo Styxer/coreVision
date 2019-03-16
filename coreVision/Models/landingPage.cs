@@ -14,33 +14,33 @@ namespace coreVision.Models
     using System.ComponentModel;
     using System.ComponentModel.DataAnnotations;
 
-    public partial class LandingPage
+    public partial class landingPage
     {
         public long id { get; set; }
 
-        [DisplayName("First Name")]
         [DataType(DataType.Text)]
-        [Required( ErrorMessage = "This field is required")]
+        [DisplayName("First Name")]
+        [Required(ErrorMessage = "This field is required.")]
         public string first_name { get; set; }
 
-        [DisplayName("Last Name")]
         [DataType(DataType.Text)]
-        [Required( ErrorMessage = "This field is required")]
+        [DisplayName("Last Name")]
+        [Required(ErrorMessage = "This field is required.")]
         public string last_name { get; set; }
 
         [DataType(DataType.PhoneNumber)]
         [DisplayName("Phone Number")]
-        [Required( ErrorMessage = "This field is required")]
+        [Required(ErrorMessage = "This field is required.")]
         public string phone { get; set; }
 
         [DataType(DataType.EmailAddress)]
-        [DisplayName("Email address")]
-        [Required( ErrorMessage = "This field is required")]
+        [DisplayName("Email Address")]
+        [Required(ErrorMessage = "This field is required.")]
         public string email { get; set; }
 
-        [DisplayName("Your message")]
         [DataType(DataType.MultilineText)]
-        [Required( ErrorMessage = "This field is required")]
+        [DisplayName("Your Message")]
+        [Required(ErrorMessage = "This field is required.")]
         public string message { get; set; }
     }
 }
